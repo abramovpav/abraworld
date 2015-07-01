@@ -1,0 +1,13 @@
+{
+  "name": "abraworld",
+  "version": "0.0.0",
+  "authors": [
+    "abramovpav <abramovpav@gmail.com>"
+  ],
+  "description": "SPA Django + AngularJS + NodeJS",
+  "license": "GPL",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.1"
+  }
+}
