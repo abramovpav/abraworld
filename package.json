@@ -35,13 +35,15 @@
     "gulp-angular-templatecache": "~1.7.0",
     "gulp-header": "~1.2.2",
     "gulp-watch": "~4.2.4",
-    "gulp-concat-css": "~2.2.0"
+    "gulp-concat-css": "~2.2.0",
+    "gulp-minify-html": "~1.0.3"
   },
   "devDependencies": {
     "gulp": "~3.9.0"
   },
   "browser": {
-    "angular": "./bower_components/angular/angular.js"
+    "angular": "./bower_components/angular/angular.js",
+    "angular-ui-router": "./bower_components/angular-ui-router/release/angular-ui-router.js"
   },
   "browserify-shim": {}
 }
