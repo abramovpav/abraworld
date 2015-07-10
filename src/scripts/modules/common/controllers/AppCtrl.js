@@ -1,10 +1,11 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-  function AppCtrl($state) {
+    function AppCtrl($scope) {
 
-    console.log("Hello");
+        console.log("Hello");
+        $scope.world = 'World!!!';
 
-    this.goToParent = function(){
+        this.goToParent = function () {
+        };
     };
-  };

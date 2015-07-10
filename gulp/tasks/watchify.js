@@ -7,10 +7,9 @@ var browserify = require('browserify');
 var browserifyShim = require('browserify-shim');
 
 gulp.task('watchify', function () {
-    var b = browserify(watchify.args);
-    var bundler = watchify(b, {
-        entries: [config.paths.src.modules]
-    });
+    watchify.args.debug = true;
+    var b = browserify([config.paths.src.modules], watchify.args);
+    var bundler = watchify(b);
 
 
     bundler.transform(browserifyShim);

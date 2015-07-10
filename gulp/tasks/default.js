@@ -4,20 +4,20 @@ var gulp = require('gulp');
 var runSequence = require('run-sequence');
 
 gulp.task('default', function () {
-  //if (release) {
-  //  runSequence(
-  //    'clean',
-  //    ['index', 'styles', 'images', 'assets', 'bootfonts', 'templates', 'lint'],
-  //    'browserify',
-  //    ['minify', 'serve']
-  //  );
-  //} else {
+    //if (release) {
+    //  runSequence(
+    //    'clean',
+    //    ['index', 'styles', 'images', 'assets', 'bootfonts', 'templates', 'lint'],
+    //    'browserify',
+    //    ['minify', 'serve']
+    //  );
+    //} else {
     runSequence(
-      'clean',
-      ['index', 'styles', 'lint'],
-      ['watchify', 'serve']
+        'clean',
+        ['index', 'styles', 'lint'],
+        ['watchify', 'serve']
     );
-  //}
+    //}
 });
 
 //['index', 'styles', 'images', 'assets', 'bootfonts', 'templates', 'lint'],
