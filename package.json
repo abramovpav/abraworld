@@ -34,7 +34,8 @@
     "vinyl-source-stream": "~1.1.0",
     "gulp-angular-templatecache": "~1.7.0",
     "gulp-header": "~1.2.2",
-    "gulp-watch": "~4.2.4"
+    "gulp-watch": "~4.2.4",
+    "gulp-concat-css": "~2.2.0"
   },
   "devDependencies": {
     "gulp": "~3.9.0"
