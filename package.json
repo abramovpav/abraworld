@@ -31,7 +31,10 @@
     "watchify": "~3.2.3",
     "browserify": "~10.2.4",
     "browserify-shim": "~3.8.9",
-    "vinyl-source-stream": "~1.1.0"
+    "vinyl-source-stream": "~1.1.0",
+    "gulp-angular-templatecache": "~1.7.0",
+    "gulp-header": "~1.2.2",
+    "gulp-watch": "~4.2.4"
   },
   "devDependencies": {
     "gulp": "~3.9.0"

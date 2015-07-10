@@ -14,8 +14,8 @@ gulp.task('default', function () {
     //} else {
     runSequence(
         'clean',
-        ['index', 'styles', 'lint'],
-        ['watchify', 'serve']
+        ['index', 'styles', 'templates', 'lint'],
+        ['watchify', 'watch', 'serve']
     );
     //}
 });
