@@ -36,7 +36,8 @@
     "gulp-header": "~1.2.2",
     "gulp-watch": "~4.2.4",
     "gulp-concat-css": "~2.2.0",
-    "gulp-minify-html": "~1.0.3"
+    "gulp-minify-html": "~1.0.3",
+    "gulp-batch": "~1.0.5"
   },
   "devDependencies": {
     "gulp": "~3.9.0"

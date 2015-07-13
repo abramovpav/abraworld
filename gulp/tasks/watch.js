@@ -2,15 +2,22 @@
 
 var gulp = require('gulp');
 var watch = require('gulp-watch');
+var batch = require('gulp-batch');
 var livereload = require('gulp-livereload');
-//var livereloadServer = livereload(config.ports.livereloadServer);
 
 gulp.task('watch', function () {
-    livereload.listen();
+    livereload.listen({port: config.ports.livereloadServer});
     gulp.watch(config.paths.src.livereload).on('change', livereload.changed);
-
-    watch([config.paths.src.scripts], ['lint']);
-    watch([config.paths.src.index], ['index']);
-    watch([config.paths.src.templates, config.paths.src.templatesHTML], ['templates']);
-    watch([config.paths.src.stylesGlob], ['styles']);
+    gulp.watch([config.paths.src.scripts], batch(function (events, done) {
+        gulp.start('lint', done);
+    }));
+    gulp.watch([config.paths.src.index], batch(function (events, done) {
+        gulp.start('index', done);
+    }));
+    gulp.watch([config.paths.src.templates, config.paths.src.templatesHTML], batch(function (events, done) {
+        gulp.start('templates', done);
+    }));
+    gulp.watch([config.paths.src.stylesGlob], batch(function (events, done) {
+        gulp.start('styles', done);
+    }))
 });
