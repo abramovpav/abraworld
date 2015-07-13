@@ -4,7 +4,8 @@ require('angular');
 require('angular-ui-router');
 
 angular.module('abraworld-ui', [
+    'ui.router',
     require('./modules/common').name,
-    require('../../tmp/templates').name,
-    'ui.router'
+    require('./modules/articles').name,
+    require('../../tmp/templates').name
 ]).config(require('./config'));
