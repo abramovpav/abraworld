@@ -1,7 +1,11 @@
 'use strict';
 
 require('angular');
+require('angular-ui-router');
 
 angular.module('abraworld-ui', [
-    require('./modules/common').name
-]);
+    'ui.router',
+    require('./modules/common').name,
+    require('./modules/articles').name,
+    require('../../tmp/templates').name
+]).config(require('./config'));

@@ -14,7 +14,7 @@ gulp.task('default', function () {
     //} else {
     runSequence(
         'clean',
-        ['index', 'styles', 'templates', 'lint'],
+        ['index', 'styles', 'images', 'favicon', 'templates', 'lint'],
         ['watchify', 'watch', 'serve']
     );
     //}

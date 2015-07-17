@@ -10,6 +10,7 @@ global.config = {
             index: SRC_FOLDER + '/index.html',
             assets: [SRC_FOLDER + '/assets/**/*', '!' + SRC_FOLDER + '/assets/images/**/*'],
             images: SRC_FOLDER + '/assets/images/**/*',
+            favicon: SRC_FOLDER + '/favicon.png',
             scripts: SRC_FOLDER + '/scripts/**/*.js',
             bootfonts: 'bower_components/bootstrap/dist/fonts/**/*',
             styles: SRC_FOLDER + '/styles/app.less',
@@ -26,6 +27,7 @@ global.config = {
                 scripts: BUILD_FOLDER,
                 fonts: BUILD_FOLDER + '/assets/fonts/bootstrap',
                 images: BUILD_FOLDER + '/assets/images',
+                favicon: BUILD_FOLDER,
                 assets: BUILD_FOLDER + '/assets',
                 index: BUILD_FOLDER,
                 server: BUILD_FOLDER
