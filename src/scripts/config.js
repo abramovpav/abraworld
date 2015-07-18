@@ -15,20 +15,9 @@ module.exports = /*@ngInject*/
             .state('app.common', {
                 abstract: true,
                 templateUrl: "base"
-            })
+            });
             //.state('app.common.nothing', {
             //    url: '/',
             //    templateUrl: "nothing/index"
-            //})
-            .state('app.common.profile', {
-                url: "/profile",
-                templateUrl: "profile/index"
-            })
-            .state('app.common.state2.list', {
-                url: "/list",
-                templateUrl: "state2/state2.list",
-                controller: /*@ngInject*/function ($scope) {
-                    $scope.things = ["A", "Set", "Of", "Things"];
-                }
-            });
+            //});
     };

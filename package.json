@@ -37,13 +37,15 @@
     "gulp-watch": "~4.2.4",
     "gulp-concat-css": "~2.2.0",
     "gulp-minify-html": "~1.0.3",
-    "gulp-batch": "~1.0.5"
+    "gulp-batch": "~1.0.5",
+    "mkpath": "~0.1.0"
   },
   "devDependencies": {
     "gulp": "~3.9.0"
   },
   "browser": {
     "angular": "./bower_components/angular/angular.js",
+    "angular-ui-bootstrap": "./bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
     "angular-ui-router": "./bower_components/angular-ui-router/release/angular-ui-router.js"
   },
   "browserify-shim": {}

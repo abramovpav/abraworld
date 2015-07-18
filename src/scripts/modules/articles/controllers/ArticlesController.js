@@ -1,30 +1,22 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-    function ArticlesController($scope) {
+    function ArticlesController($scope, ArticlesDataService) {
 
-        $scope.articles = [
-            {
-                id: 1,
-                title: 'First Article',
-                body: 'Just testing',
-                author: {
-                    id: 1,
-                    username: 'admin',
-                    firstName: 'John',
-                    lastName: 'Doe'
+        function _loadArticles() {
+            return ArticlesDataService.articles.get().then(
+                function (response) {
+                    if (response.data) {
+                        $scope.articles = response.data;
+                    }
                 }
-            },
-            {
-                id: 2,
-                title: 'Secong Article',
-                body: 'Just testing again',
-                author: {
-                    id: 1,
-                    username: 'admin',
-                    firstName: 'John',
-                    lastName: 'Doe'
-                }
-            }
-        ];
+            );
+        }
+
+        function init() {
+            $scope.articles = [];
+            _loadArticles();
+        }
+
+        init();
     };
