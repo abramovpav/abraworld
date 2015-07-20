@@ -9,7 +9,7 @@ angular.module('abraworld-ui', [
     'ui.bootstrap',
     require('./modules/common').name,
     //require('./modules/nothing').name,
-    require('./modules/articles').name,
+    require('./modules/blog').name,
     require('./modules/profile').name,
     require('../../tmp/templates').name
 ]).config(require('./config'));

@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-    function ArticlesController($scope, ArticlesDataService) {
+    function BlogController($scope, BlogDataService) {
 
         function _loadArticles() {
-            return ArticlesDataService.articles.get().then(
+            return BlogDataService.articles.get().then(
                 function (response) {
                     if (response.data) {
                         $scope.articles = response.data;

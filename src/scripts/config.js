@@ -3,7 +3,7 @@
 module.exports = /*@ngInject*/
     function ($stateProvider, $urlRouterProvider, $locationProvider) {
         // For any unmatched url, redirect to /state1
-        $urlRouterProvider.otherwise("/articles");
+        $urlRouterProvider.otherwise("/blog");
         $locationProvider.html5Mode(true);
 
         // Now set up the states

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-    function ArticlesDataService(DataProvider) {
+    function BlogDataService(DataProvider) {
         var api = {
             articles: {
                 get: '/api/articles'

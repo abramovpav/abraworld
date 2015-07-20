@@ -4,10 +4,10 @@ module.exports = /*@ngInject*/
     function ($stateProvider) {
         //
         $stateProvider
-            .state('app.common.articles', {
-                url: "/articles",
-                templateUrl: "articles/index",
-                controller: 'ArticlesController'
+            .state('app.common.blog', {
+                url: "/blog",
+                templateUrl: "blog/index",
+                controller: 'BlogController'
             });
             //.state('app.common.articles.list', {
             //    url: "/list",
