@@ -1,0 +1,13 @@
+{
+  "data": {
+    "id": 1,
+    "title": "First",
+    "body": "A AA AAA AAAA AAAAA AAAAA AAAAAAA AAAAAAA AAAAAAAAA AAAAAAAAAA AAAAAAAAAAA",
+    "author": {
+      "id": 1,
+      "username": "admin",
+      "firstName": "Admin",
+      "lastName": "Adminovich"
+    }
+  }
+}

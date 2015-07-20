@@ -1,0 +1,22 @@
+<div data-ng-class="{'grey': article.id % 2 != 0, 'white': article.id % 2 == 0}" data-ng-repeat="article in articles">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <p><img src="/assets/images/user.png" width="50px" height="50px">
+                    <ba> #{{article.author.id}} {{article.author.username}}</ba>
+                </p>
+                <p>
+                    <bd>January 18, 2014</bd>
+                </p>
+                <h4>#{{article.id}} {{article.title}}</h4>
+
+                <p>{{article.body}}</p>
+
+                <p><a href="#">Continue Reading...</a></p>
+            </div>
+
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
