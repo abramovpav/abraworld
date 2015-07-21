@@ -33,9 +33,9 @@ gulp.task('serve', function (next) {
                         res.writeHead(200, 'Ok');
                     }
 
-                    setTimeout(function () {
-                        res.end(data);
-                    }, config.api.delay);
+                    //setTimeout(function () {
+                    res.end(data);
+                    //}, config.api.delay);
                 });
             } else {
                 fs.readFile(staticServerPath + '/index.html', function (err, data) {

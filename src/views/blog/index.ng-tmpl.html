@@ -10,9 +10,9 @@
                 </p>
                 <h4>#{{article.id}} {{article.title}}</h4>
 
-                <p>{{article.body}}</p>
+                <p>{{article.preview}}</p>
 
-                <p><a href="#">Continue Reading...</a></p>
+                <p><a data-ui-sref="app.common.blog.article({id: article.id})">Continue Reading...</a></p>
             </div>
 
         </div>
