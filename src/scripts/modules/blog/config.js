@@ -5,15 +5,18 @@ module.exports = /*@ngInject*/
         //
         $stateProvider
             .state('app.common.blog', {
+                abstract: true,
+                url: '',
+                template: '<ui-view/>'
+            })
+            .state('app.common.blog.list', {
                 url: "/blog",
                 templateUrl: "blog/index",
                 controller: 'BlogController'
+            })
+            .state('app.common.blog.article', {
+                url: "/blog/{id:int}",
+                templateUrl: "blog/article",
+                controller: 'ArticleController'
             });
-            //.state('app.common.articles.list', {
-            //    url: "/list",
-            //    templateUrl: "articles/state1.list"
-                //controller: /*@ngInject*/function ($scope) {
-                //    $scope.items = ["A", "List", "Of", "Items"];
-                //}
-            //})
     };

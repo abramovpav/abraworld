@@ -1,0 +1,13 @@
+{
+  "data": {
+    "id": 2,
+    "title": "The Second",
+    "body": "B BB BBB BBBB BBBBB BpBBBB BBBBBBB BBBBBBB BBBBBBBBB BBBBBBBBBB BBBBBBBBBBB",
+    "author": {
+      "id": 1,
+      "username": "admin",
+      "firstName": "Admin",
+      "lastName": "Adminovich"
+    }
+  }
+}

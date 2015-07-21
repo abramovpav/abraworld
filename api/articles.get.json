@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "First",
-      "body": "A AA AAA AAAA AAAAA AAAAA AAAAAAA AAAAAAA AAAAAAAAA AAAAAAAAAA AAAAAAAAAAA",
+      "preview": "A AA AAA",
       "author": {
         "id": 1,
         "username": "admin",
@@ -14,7 +14,7 @@
     {
       "id": 2,
       "title": "The Second",
-      "body": "B BB BBB BBBB BBBBB BpBBBB BBBBBBB BBBBBBB BBBBBBBBB BBBBBBBBBB BBBBBBBBBBB",
+      "preview": "B BB BBB",
       "author": {
         "id": 1,
         "username": "admin",
@@ -25,7 +25,7 @@
     {
       "id": 3,
       "title": "The Third",
-      "body": "C CC CCC CCCC CCCCC CCCCC CCCCCCC CCCCCCC CCCCCCCCC CCCCCCCCCC CCCCCCCCCCC",
+      "preview": "C CC CCC",
       "author": {
         "id": 1,
         "username": "admin",
@@ -36,7 +36,7 @@
     {
       "id": 4,
       "title": "The Fouth",
-      "body": "D DD DDD DDDD DDDDD DDDDD DDDDDDD DDDDDDD DDDDDDDDD DDDDDDDDDD DDDDDDDDDDD",
+      "preview": "D DD DDD",
       "author": {
         "id": 1,
         "username": "admin",

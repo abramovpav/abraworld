@@ -1,0 +1,13 @@
+{
+  "data": {
+    "id": 4,
+    "title": "The Fouth",
+    "body": "D DD DDD DDDD DDDDD DDDDD DDDDDDD DDDDDDD DDDDDDDDD DDDDDDDDDD DDDDDDDDDDD",
+    "author": {
+      "id": 1,
+      "username": "admin",
+      "firstName": "Admin",
+      "lastName": "Adminovich"
+    }
+  }
+}
