@@ -4,7 +4,7 @@ module.exports = /*@ngInject*/
     function BlogDataService(DataProvider) {
         var api = {
             articles: {
-                get: '/api/articles'
+                get: '/api/articles/'
             },
             article: {
                 get: '/api/articles/{id}'
