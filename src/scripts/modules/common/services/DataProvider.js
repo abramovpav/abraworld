@@ -28,6 +28,11 @@ module.exports = /*@ngInject*/
             call: _call,
             get: function (url, params, config) {
                 return _call(angular.extend({url: url, params: params}, config));
+            },
+            post: function (url, data, config) {
+                return _call(angular.extend({
+                    url: url, data: data, method: 'POST'
+                }, config));
             }
         };
 

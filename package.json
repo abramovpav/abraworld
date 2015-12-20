@@ -46,7 +46,8 @@
   "browser": {
     "angular": "./bower_components/angular/angular.js",
     "angular-ui-bootstrap": "./bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
-    "angular-ui-router": "./bower_components/angular-ui-router/release/angular-ui-router.js"
+    "angular-ui-router": "./bower_components/angular-ui-router/release/angular-ui-router.js",
+    "angular-cookies": "./bower_components/angular-cookies/angular-cookies.min.js"
   },
   "browserify-shim": {}
 }
