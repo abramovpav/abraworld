@@ -1,23 +1,24 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-    function BlogController($scope, BlogDataService) {
+    function UsersController($scope, UsersDataService) {
 
-        function _loadArticles() {
-            return BlogDataService.articles.get().then(
+        function _loadUsers() {
+            return UsersDataService.users.get().then(
                 function (response) {
+                    console.log(response);
                     //if (response.data) {
                     if (response) {
                         //$scope.articles = response.data;
-                        $scope.articles = response;
+                        $scope.users = response;
                     }
                 }
             );
         }
 
         function init() {
-            $scope.articles = [];
-            _loadArticles();
+            $scope.users = [];
+            _loadUsers();
         }
 
         init();

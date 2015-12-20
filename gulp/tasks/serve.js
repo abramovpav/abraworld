@@ -6,7 +6,7 @@ var staticServer = connect(),
 var fs = require('fs');
 
 var url = require('url');
-//var proxy = require('./serve-proxy');
+var proxy = require('./serve-proxy');
 
 
 gulp.task('serve', function (next) {
@@ -17,7 +17,8 @@ gulp.task('serve', function (next) {
     //}
 
     staticServer
-        //.use('/api', proxy(url.parse(config.api.endpoint)))
+        .use('/api', proxy(url.parse(config.api.endpoint)))
+        .use('/media', proxy(url.parse(config.api.endpoint)))
         .use(serveStatic(staticServerPath)).use(function (req, res, next) {
             var url = req.originalUrl;
 

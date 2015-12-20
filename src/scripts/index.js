@@ -11,5 +11,6 @@ angular.module('abraworld-ui', [
     //require('./modules/nothing').name,
     require('./modules/blog').name,
     require('./modules/profile').name,
+    require('./modules/users').name,
     require('../../tmp/templates').name
 ]).config(require('./config'));

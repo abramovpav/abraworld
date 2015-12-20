@@ -1,0 +1,22 @@
+<div data-ng-class="{'grey': user.id % 2 != 0, 'white': user.id % 2 == 0}" data-ng-repeat="user in users">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <p><img src="{{user.profile.image.image}}" width="50px" height="50px">
+                    <ba> #{{user.id}} {{user.username}}</ba>
+                </p>
+                <p>
+                    <bd>January 18, 2014</bd>
+                </p>
+                <h4>#{{user.id}} {{user.title}}</h4>
+
+                <p>{{user.preview}}</p>
+
+                <p><a data-ui-sref="app.common.blog.user({id: user.id})">Continue Reading...</a></p>
+            </div>
+
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>

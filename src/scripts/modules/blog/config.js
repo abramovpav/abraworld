@@ -6,7 +6,6 @@ module.exports = /*@ngInject*/
         $stateProvider
             .state('app.common.blog', {
                 abstract: true,
-                url: '',
                 template: '<ui-view/>'
             })
             .state('app.common.blog.list', {
