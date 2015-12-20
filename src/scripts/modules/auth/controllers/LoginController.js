@@ -7,9 +7,9 @@ module.exports = /*@ngInject*/
         window.cook = $cookies;
 
         $scope.login = function () {
-            var _csrf = $cookies.get('csrftoken');
+            //var _csrf = $cookies.get('csrftoken');
             var _authData = angular.copy($scope.credentials);
-            _authData.csrfmiddlewaretoken = _csrf;
+            //_authData.csrfmiddlewaretoken = _csrf;
             return AuthDataService.auth.login(_authData).then(
                 function (response) {
                     console.log(response);
