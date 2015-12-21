@@ -19,4 +19,6 @@ module.exports = /*@ngInject*/
                 templateUrl: "users/article",
                 controller: 'UserController'
             });
+
+
     };

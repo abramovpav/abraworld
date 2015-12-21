@@ -16,4 +16,5 @@ angular.module('abraworld-ui', [
     require('./modules/users').name,
     require('./modules/auth').name,
     require('../../tmp/templates').name
-]).config(require('./config'));
+]).config(require('./config'))
+    .run(require('./run'));
