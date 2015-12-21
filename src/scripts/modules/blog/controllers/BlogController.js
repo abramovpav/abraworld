@@ -6,6 +6,7 @@ module.exports = /*@ngInject*/
         function _loadArticles() {
             return BlogDataService.articles.get().then(
                 function (response) {
+                    console.log(response);
                     //if (response.data) {
                     if (response) {
                         //$scope.articles = response.data;

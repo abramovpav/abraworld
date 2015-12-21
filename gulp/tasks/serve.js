@@ -18,7 +18,7 @@ gulp.task('serve', function (next) {
 
     staticServer
         .use('/api', proxy(url.parse(config.api.endpoint)))
-        .use('/auth', proxy(url.parse(config.api.endpoint)))
+        .use('/api-token-auth', proxy(url.parse(config.api.endpoint)))
         .use('/media', proxy(url.parse(config.api.endpoint)))
         .use(serveStatic(staticServerPath)).use(function (req, res, next) {
             var url = req.originalUrl;

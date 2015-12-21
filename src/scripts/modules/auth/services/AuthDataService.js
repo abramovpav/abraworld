@@ -4,7 +4,7 @@ module.exports = /*@ngInject*/
     function AuthDataService(DataProvider) {
         var api = {
             api: {
-                login: '/auth/login'
+                login: '/api-token-auth/'
                 //logout: '/api-auth/logout'
             }
         };
