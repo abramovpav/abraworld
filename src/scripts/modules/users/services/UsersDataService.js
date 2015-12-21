@@ -7,7 +7,8 @@ module.exports = /*@ngInject*/
                 get: '/api/users/'
             },
             user: {
-                get: '/api/users/{id}'
+                get: '/api/users/{id}',
+                current: '/api/users/current'
             }
         };
         function _getUsers() {
@@ -20,12 +21,18 @@ module.exports = /*@ngInject*/
                 api.user.get.replace('{id}', id)
             )
         }
+        function _getCurrentUser(id) {
+            return DataProvider.get(
+                api.user.current
+            )
+        }
         return {
             users: {
                 get: _getUsers
             },
             user: {
-                get: _getUser
+                get: _getUser,
+                current: _getCurrentUser
             }
         }
     };

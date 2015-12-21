@@ -14,6 +14,7 @@ module.exports = /*@ngInject*/
                 creadentials
             )
         }
+
         return {
             auth: {
                 login: _login

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-    function LoginController($scope, AuthDataService, $state, $stateParams, $cookies, $http) {
+    function LoginController($scope, AuthDataService, $state, $stateParams, $cookies, UsersDataService) {
 
         window.log = $scope;
         window.cook = $cookies;
@@ -16,7 +16,19 @@ module.exports = /*@ngInject*/
                     console.log(response);
                     if (response.token)
                         $cookies.put('jwt', response.token);
-                        //$http.defaults.headers.common['Authorization'] = 'JWT ' + response.token;
+                    return response
+                }
+            ).then(
+                function() {
+                    return UsersDataService.user.current().then(
+                        function(response) {
+                            console.log(response);
+                            $scope.user = response
+                        },
+                        function (response) {
+                            $scope.error = response
+                        }
+                    )
                 }
             );
         };
