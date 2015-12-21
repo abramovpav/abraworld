@@ -21,9 +21,12 @@ module.exports = /*@ngInject*/
                         $scope.error = response.non_field_errors;
                     else
                         $scope.error = 'Unable to login';
+                    return response
                 }
             ).then(
-                function() {
+                function(response) {
+                    if (!response.token)
+                        return;
                     return UsersDataService.user.current().then(
                         function(response) {
                             console.log(response);
